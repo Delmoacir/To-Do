@@ -15,16 +15,16 @@
         </div>
         <div class="right-login">
             <div class="card-login">
-                <form action="a.php" method="post">
+                <form action="./CRUD/logar_usuario.php" method="post">
                 <h1>Login</h1>
                 <div class="text-fild">
-                    <label for="usuario">Usuario</label>
-                    <input type="text" name="usuario" placeholder="Usuario">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" placeholder="Email">
                 </div>
                 <div class="text-fild">
                     <label for="senha">Senha</label>
                     <input type="password" name="senha" placeholder="Senha">
-                    <a href="./cadastro.html">Criar Conta</a>
+                    <a href="./cadastro.php">Criar Conta</a>
                 </div>
                 <button type="submit" class="btn-login">Login</button>
             </form>
@@ -34,7 +34,7 @@
 
 
     <?php
-        if(isset($_COOKIE["usuario"])){
+        if(isset($_COOKIE["email"])){
 
             header("Location: a.php");
             

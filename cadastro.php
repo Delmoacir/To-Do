@@ -15,7 +15,7 @@
         </div>
         <div class="right-login">
             <div class="card-login">
-                <form action="a.php" method="get">
+                <form action="./CRUD/criar_usuario.php" method="get">
                 <h1>Cadastro</h1>
                 <div class="text-fild">
                     <label for="nome">Nome</label>
@@ -40,11 +40,12 @@
         </div>
     </div>
     <?php
-     if(isset($_COOKIE["usuario"])){
+    if(isset($_COOKIE["email"])){
 
         header("Location: a.php");
         
     }
+
     ?>
 </body>
 </html>
